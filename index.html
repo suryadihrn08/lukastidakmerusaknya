@@ -5,28 +5,29 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#111111">
   <meta name="description" content="Galeri sederhana tentang Lukas.">
-  <title>Lukastidakmerusaknyatoto</title>
+  <title>Lukas Tidak Merusaknya</title>
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="nav">
-  <a class="brand" href="#home"><img src="assets/logo.jpeg" alt="Logo"><span>Lukastidakmerusaknyatoto</span></a>
-  <div class="navlinks"><a class="navlink" href="#postingan">Postingan</a><a class="navlink" href="#video">Video</a><a class="navlink" href="#galeri">Galeri</a></div>
+  <a class="brand" href="#home"><img src="assets/logo.jpeg" alt="Logo"><span>Lukas Tidak Merusaknya</span></a>
+  <div class="navlinks"><a class="navlink" href="#postingan">Momen</a><a class="navlink" href="#video">Video</a><a class="navlink" href="#galeri">Galeri</a><a class="navlink" href="#about">About</a><a class="navlink" href="#kontak">Kontak</a></div>
 </header>
 <main>
   <section class="hero" id="home">
     <div class="hero-card">
       <img class="avatar" src="assets/logo.jpeg" alt="Foto utama Lukas">
       <p class="eyebrow">WELCOME TO</p>
-      <h1>Lukastidakmerusaknyatoto</h1>
+      <h1>Lukas Tidak Merusaknya</h1>
       <p class="lead">Sebuah halaman kecil untuk menyimpan momen-momen Lukas.</p>
       <a class="button" href="#galeri">Lihat foto ↓</a>
     </div>
   </section>
 
   <section class="post-section" id="postingan">
-    <div class="section-head"><p class="eyebrow">POSTINGAN TERBARU</p><h2>Hari ini</h2></div>
+    <div class="section-head"><p class="eyebrow">CERITA LUKAS</p><h2>Momen terbaru</h2></div>
+    <div id="livePosts" class="live-posts" aria-live="polite"></div>
     <article class="post-card">
       <div class="post-header"><img src="assets/logo.jpeg" alt="" class="post-avatar"><div><strong>Lukas</strong><time datetime="2026-09-27">27 September 2026</time></div></div>
       <p class="post-caption">Ibadah dulu guys..</p>
@@ -54,9 +55,11 @@
       <button class="photo" data-src="assets/logo.jpeg"><img src="assets/logo.jpeg" alt="Momen bersama Lukas" loading="lazy"></button>
     </div>
   </section>
+  <section class="info-section" id="about"><p class="eyebrow">ABOUT</p><h2>Tentang Lukas</h2><p>Tempat menyimpan cerita, foto, dan video keseharian Lukas. Setiap momen punya ceritanya sendiri.</p></section>
+  <section class="info-section" id="kontak"><p class="eyebrow">KONTAK</p><h2>Hubungi kami</h2><p>Punya pesan untuk Lukas? Hubungi lewat <a href="mailto:halo@contoh.com" id="contactEmail">email</a>.</p></section>
 </main>
-<footer>© <span id="year"></span> Lukastidakmerusaknyatoto</footer>
+<footer>© <span id="year"></span> Lukas Tidak Merusaknya</footer>
 <div class="lightbox" id="lightbox" aria-hidden="true"><button class="close" aria-label="Tutup">×</button><img id="lightboxImg" alt="Foto Lukas diperbesar"></div>
-<script src="script.js"></script>
+<script src="config.js"></script><script src="script.js"></script><script type="module" src="posts.js"></script>
 </body>
 </html>
