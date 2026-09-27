@@ -12,9 +12,8 @@
 <body>
 <header class="nav">
   <a class="brand" href="#home"><img src="assets/logo.jpeg" alt="Logo"><span>Lukastidakmerusaknyatoto</span></a>
-  <div class="navlinks"><button class="music-toggle" id="musicToggle" type="button" aria-label="Putar musik">♫ Musik</button><a class="navlink" href="#video">Video</a><a class="navlink" href="#galeri">Galeri</a></div>
+  <div class="navlinks"><a class="navlink" href="#postingan">Postingan</a><a class="navlink" href="#video">Video</a><a class="navlink" href="#galeri">Galeri</a></div>
 </header>
-<audio id="bgMusic" loop preload="auto"><source src="assets/aku-anak-sehat.mp3" type="audio/mpeg"></audio>
 <main>
   <section class="hero" id="home">
     <div class="hero-card">
@@ -26,6 +25,17 @@
     </div>
   </section>
 
+  <section class="post-section" id="postingan">
+    <div class="section-head"><p class="eyebrow">POSTINGAN TERBARU</p><h2>Hari ini</h2></div>
+    <article class="post-card">
+      <div class="post-header"><img src="assets/logo.jpeg" alt="" class="post-avatar"><div><strong>Lukas</strong><time datetime="2026-09-27">27 September 2026</time></div></div>
+      <p class="post-caption">Ibadah dulu guys..</p>
+      <video controls playsinline preload="metadata" aria-label="Video postingan 27 September 2026">
+        <source src="assets/ibadah-27-september-2026.mp4" type="video/mp4">
+        Browser kamu tidak mendukung video HTML5.
+      </video>
+    </article>
+  </section>
   <section class="video-section" id="video">
     <div class="section-head"><p class="eyebrow">LUKAS IN MOTION</p><h2>Video Lukas</h2><p>Satu momen, sekarang lebih hidup.</p></div>
     <div class="video-frame">
